@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "./Header";
 
 export default function Home() {
     let [input, setInput] = useState("");
@@ -10,14 +11,7 @@ export default function Home() {
 
     return (
         <>
-            <nav>
-                <label className="logo">Nano Url</label>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Docs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <Header/>
             <div className="container">
                 <p>Paste an url to be shortened</p>
                 <form onSubmit={submitBtn}>

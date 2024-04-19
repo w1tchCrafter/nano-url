@@ -7,7 +7,10 @@
 }
 
 body {
-    background: #f7f7f9;
+    background: url('public/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Madimi One", sans-serif;
 }
 
 #root {
@@ -22,7 +25,6 @@ body {
     padding: 0 20px;
     font-weight: bold;
     color: #f7f7f9;
-    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -47,26 +49,28 @@ nav ul li {
 nav ul li a{
     color: #fff;
     font-size: 30px;
-    font-family: Arial, sans-serif;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
 
 .container {
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
     max-width: 1300px;
     padding: 20px;
-    background: #564ec2;
     height: 250px;
-    box-shadow: inset;
+    background-image: linear-gradient(to bottom, #918ae3, #564ec2);
+}
+
+.container, nav {
+    box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.3);
 }
 
 .container p {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #121015;
+    color: #f7f7f9;
 }
 
 .container form input {
@@ -75,6 +79,7 @@ nav ul li a{
     border-radius: 10px;
     border: 0;
     margin-right: 5px;
+    font-size: 15px;
 }
 
 .container form button {
@@ -85,4 +90,9 @@ nav ul li a{
     height: 40px;
     background-color: #918ae3;
     color: #fff;
+}
+
+.container input, button {
+    box-shadow: 4px 7px 5px rgb(0, 0, 0, 0.1);
+    font-family: "Madimi One", sans-serif;
 }
