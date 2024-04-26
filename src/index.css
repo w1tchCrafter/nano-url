@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url('public/dark-background.jpg');
+    background: url('/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Madimi One", sans-serif;
@@ -90,6 +90,7 @@ nav ul li a{
     height: 40px;
     background-color: #918ae3;
     color: #fff;
+    cursor: pointer;
 }
 
 .container input, button {
