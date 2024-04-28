@@ -93,6 +93,10 @@ nav ul li a{
     cursor: pointer;
 }
 
+/* .container form button::hover {
+    background-color: #564ec2;
+} */
+
 .container input, button {
     box-shadow: 4px 7px 5px rgb(0, 0, 0, 0.1);
     font-family: "Madimi One", sans-serif;
