@@ -6,13 +6,7 @@ export default function CardContainer(props) {
   const [cookieData, setCookieData] = useState([]);
 
   useEffect(() => {
-    if (cookie !== undefined) {
-      setCookieData(JSON.parse(cookie));
-    }
-  }, []);
-
-  useEffect(() => {
-    console.log("From card container:", cookie);
+    setCookieData(JSON.parse(cookie));
   }, [cookie]);
 
   return (

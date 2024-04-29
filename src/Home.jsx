@@ -7,8 +7,6 @@ export default function Home() {
   const [input, setInput] = useState("");
   const [cookieValue, setCookieValue] = useState(Cookies.get("nanourl"));
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     Cookies.set("nanourl", cookieValue);
   }, [cookieValue]);
@@ -20,7 +18,7 @@ export default function Home() {
       const resp = await fetch("http://localhost:3000/shorten", {
         method: "post",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ original: input, cookie: true }),
+        body: JSON.stringify({ original: input }),
       });
 
       const json = await resp.json();
@@ -41,7 +39,7 @@ export default function Home() {
     <>
       <Header />
       <div className="container">
-        <p>Paste an url to be shortened</p>
+        <h2>Paste an url to be shortened</h2>
         <form onSubmit={submitBtn}>
           <input
             type="text"

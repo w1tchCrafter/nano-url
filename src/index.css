@@ -24,7 +24,7 @@ body {
     line-height: 80px;
     padding: 0 20px;
     font-weight: bold;
-    color: #f7f7f9;
+    color: #564ec2;
 }
 
 nav {
@@ -32,22 +32,37 @@ nav {
     width: 100%;
     margin-top: 10px;
     border-radius: 20px;
-    background: #918ae3;
+    background: #f7f7f9;
+    border: .3px solid #b3b6ba
 }
 
 nav ul {
     float: right;
     margin-right: 20px;
+    text-align: center;
+    padding: 15px;
 }
 
 nav ul li {
+    list-style: none;
     display: inline-block;
-    line-height: 79px;
-    margin: 0 5px;
+    border-radius: 10px;
+    margin: 5px;
+    outline: none;
+}
+
+nav a {
+    border-radius: inherit;
+    transition: .5s linear;
+}
+
+nav a:hover {
+    color: white;
+    background: #564ec2;
 }
 
 nav ul li a{
-    color: #fff;
+    color: #564ec2;
     font-size: 30px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -57,27 +72,28 @@ nav ul li a{
 .container {
     margin-top: 15px;
     border-radius: 10px;
+    border: .3px solid #b3b6ba;
     max-width: 1300px;
     padding: 20px;
     height: 250px;
-    background-image: linear-gradient(to bottom, #918ae3, #564ec2);
+    background-color: #f7f7f9;
 }
 
 .container, nav {
     box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.3);
 }
 
-.container p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f7f7f9;
+.container h2 {
+    /* font-size: 20px;*/
+    margin-bottom: 10px;
+    color: #564ec2;
 }
 
 .container form input {
     width: 80%;
     height: 40px;
     border-radius: 10px;
-    border: 0;
+    border: .1px solid #b3b6ba;
     margin-right: 5px;
     font-size: 15px;
 }
@@ -91,11 +107,12 @@ nav ul li a{
     background-color: #918ae3;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s linear;
 }
 
-/* .container form button::hover {
+form button:hover {
     background-color: #564ec2;
-} */
+}
 
 .container input, button {
     box-shadow: 4px 7px 5px rgb(0, 0, 0, 0.1);
