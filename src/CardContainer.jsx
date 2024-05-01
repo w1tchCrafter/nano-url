@@ -10,9 +10,9 @@ export default function CardContainer(props) {
   }, [cookie]);
 
   return (
-    <ul>
+    <ul className="card-container">
       {cookieData.map((v, i) => (
-        <UrlCard original={v.original} link={v.shortened} key={i} />
+        <UrlCard original={v.original} link={"http://localhost:3000/" + v.shortened} key={i} />
       ))}
     </ul>
   );
