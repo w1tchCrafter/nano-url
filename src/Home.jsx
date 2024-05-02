@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, createContext } from "react";
 import Cookies from "js-cookie";
 import Header from "./Header";
 import CardContainer from "./CardContainer.jsx";
 
+export const CookieContext = createContext();
+
 export default function Home() {
+  const cookie = Cookies.get("nanourl");
+  if (cookie === "undefined") Cookies.set("nanourl", JSON.stringify([]));
+
   const [input, setInput] = useState("");
   const [cookieValue, setCookieValue] = useState(Cookies.get("nanourl"));
 
   useEffect(() => {
-    Cookies.set("nanourl", cookieValue, {expires: new Date().getFullYear() + 10});
+    Cookies.set("nanourl", cookieValue, {
+      expires: new Date().getFullYear() + 10,
+    });
   }, [cookieValue]);
 
   const submitBtn = async (event) => {
@@ -50,7 +57,9 @@ export default function Home() {
           <button type="submit">shorten url</button>
         </form>
       </div>
-      <CardContainer cookie={cookieValue ? cookieValue : "[]"} />
+      <CookieContext.Provider value={[cookieValue, setCookieValue]}>
+        <CardContainer />
+      </CookieContext.Provider>
     </>
   );
 }
