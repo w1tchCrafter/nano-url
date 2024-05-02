@@ -8,7 +8,7 @@ export default function Home() {
   const [cookieValue, setCookieValue] = useState(Cookies.get("nanourl"));
 
   useEffect(() => {
-    Cookies.set("nanourl", cookieValue);
+    Cookies.set("nanourl", cookieValue, {expires: new Date().getFullYear() + 10});
   }, [cookieValue]);
 
   const submitBtn = async (event) => {

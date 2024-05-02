@@ -11,7 +11,7 @@ export default function UrlCard(props) {
         <a href={original}>{original}</a>
       </div>
       <div className="url-actions">
-        <FontAwesomeIcon icon={faCopy} />
+        <FontAwesomeIcon onClick={navigator.clipboard.writeText(link)} icon={faCopy} />
         <FontAwesomeIcon icon={faTrash} />
       </div>
     </li>

@@ -119,12 +119,14 @@ form button:hover {
 }
 
 .card-container {
+    height: 270px;
     padding: 5px;
     width: 50%;
     margin-top: 10px;
     border: .1px solid #b3b6ba;
     border-radius: 15px;
     box-shadow: 4px 7px 5px rgb(0, 0, 0, 0.1);
+    overflow-y: scroll;
 }
 
 .url-container {
@@ -141,6 +143,7 @@ form button:hover {
 .url-container .url-texts {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .url-container .url-actions {
