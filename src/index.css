@@ -79,7 +79,7 @@ nav ul li a{
     background-color: #f7f7f9;
 }
 
-.container, nav {
+.container, .about, nav {
     box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.3);
 }
 
@@ -157,4 +157,22 @@ svg {
     font-size: 20px;
     margin-right: 15px;
     cursor: pointer;
+}
+
+.about {
+    height: 500px;
+    background: #fff;
+    border: .1px solid #b3b6ba;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    top: 10px;
 }
