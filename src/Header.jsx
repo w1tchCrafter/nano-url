@@ -4,7 +4,7 @@ export default function Header() {
       <label className="logo">Nano Url</label>
       <ul>
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
           <a href="#">Docs</a>

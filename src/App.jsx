@@ -1,4 +1,5 @@
 import Home from "./Home.jsx";
+import About from "./about.jsx";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" Component={Home}></Route>
+        <Route path="/about" Component={About}></Route>
       </Routes>
     </BrowserRouter>
   );

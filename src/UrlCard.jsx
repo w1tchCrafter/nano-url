@@ -11,7 +11,7 @@ export default function UrlCard(props) {
     await navigator.clipboard.writeText(link);
   };
 
-  const toTrash = async () => {
+  const toTrash = () => {
     const jsonCookie = JSON.parse(cookie);
     const newCookie = jsonCookie.filter(
       (v) => v.original !== original && v.shortened !== link
