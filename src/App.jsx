@@ -1,6 +1,7 @@
+import Docs from "./Docs.jsx";
 import Home from "./Home.jsx";
 import About from "./about.jsx";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" Component={Home}></Route>
         <Route path="/about" Component={About}></Route>
+        <Route path="docs" Component={Docs}></Route>
       </Routes>
     </BrowserRouter>
   );

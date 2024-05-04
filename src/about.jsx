@@ -44,7 +44,8 @@ export default function About() {
 
           <h2>Get Started</h2>
           <p>
-            Ready to start shortening your URLs? Sign up for an account today
+            Ready to start shortening your URLs? Just go to the{" "}
+            <a href="/">home page </a>
             and gain access to all the features our URL shortener has to offer!
           </p>
 
