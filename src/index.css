@@ -181,13 +181,37 @@ svg {
 }
 
 .about .features-list {
-    list-style: disc;
-    text-align: left;
-    width: 50%;
-    left: 34%;
-    position: relative;
+  list-style: disc;
+  text-align: left;
+  width: 50%;
+  left: 34%;
+  position: relative;
 }
 
 .about .features-list li {
   list-style-type: disc;
+}
+
+.documentation {
+    height: 500px;
+  background: #fff;
+  border: 0.1px solid #b3b6ba;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.documentation h2 {
+    text-align: center;
+}
+
+.documentation .docs-title {
+    margin-bottom: 10px;
+    top: 10px;
+    text-align: center;
+}
+
+.documentation .docs-title h1 {
+    font-size: 50px;
 }
