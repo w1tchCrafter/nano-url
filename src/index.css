@@ -202,14 +202,13 @@ svg {
   justify-content: center;
 }
 
-.documentation h2 {
+.documentation h2, .docs-title {
     text-align: center;
 }
 
 .documentation .docs-title {
     margin-bottom: 10px;
     top: 10px;
-    text-align: center;
 }
 
 .documentation .docs-title h1 {
