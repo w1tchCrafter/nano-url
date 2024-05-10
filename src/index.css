@@ -81,6 +81,7 @@ nav ul li a {
 
 .container,
 .about,
+.contact-form,
 nav {
   box-shadow: 5px 10px 5px rgb(0, 0, 0, 0.3);
 }
@@ -174,7 +175,8 @@ svg {
   justify-content: center;
 }
 
-.about h1 {
+.about,
+.contact-div h1 {
   font-size: 50px;
   margin-bottom: 20px;
   top: 10px;
@@ -192,8 +194,62 @@ svg {
   list-style-type: disc;
 }
 
+.contact-div {
+  height: 500px;
+  background: #fff;
+  border: 0.1px solid #b3b6ba;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #564ec2;
+}
+
+#contact-form > button:nth-child(4) {
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  border: 0;
+  height: 40px;
+  background-color: #918ae3;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s linear;
+  width: 100px;
+}
+
+#contact-form > button:nth-child(4):hover {
+  background-color: #564ec2;
+}
+
+.contact-div input {
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.1px solid #b3b6ba;
+  margin-right: 5px;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.contact-div input,
+button {
+  box-shadow: 4px 7px 5px rgb(0, 0, 0, 0.1);
+  font-family: "Madimi One", sans-serif;
+}
+
+.contact-div textarea {
+  border-radius: 10px;
+  border: 0.1px solid #b3b6ba;
+  text-align: center;
+  width: 43%;
+  height: 200px;
+}
+
 .documentation {
-    height: 500px;
+  height: 500px;
   background: #fff;
   border: 0.1px solid #b3b6ba;
   border-radius: 10px;
@@ -202,15 +258,16 @@ svg {
   justify-content: center;
 }
 
-.documentation h2, .docs-title {
-    text-align: center;
+.documentation h2,
+.docs-title {
+  text-align: center;
 }
 
 .documentation .docs-title {
-    margin-bottom: 10px;
-    top: 10px;
+  margin-bottom: 10px;
+  top: 10px;
 }
 
 .documentation .docs-title h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
