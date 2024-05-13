@@ -276,14 +276,13 @@ button {
 @media (max-width: 952px) {
   #root {
     width: 95%;
-    margin: 0 auto;
-    padding: 0;
+    align-items: center;
   }
 
   .logo {
     font-size: 29px;
   }
-  
+
   nav ul li a {
     display: none;
   }
@@ -296,5 +295,14 @@ button {
     font-size: 13px;
     width: auto;
     padding: 1px;
+  }
+
+  .card-container {
+    width: 85%;
+    margin-left: 30px;
+  }
+
+  .url-container .url-texts {
+    font-size: 15px;
   }
 }
