@@ -298,11 +298,15 @@ button {
   }
 
   .card-container {
-    width: 85%;
-    margin-left: 30px;
+    width: 100%;
   }
 
   .url-container .url-texts {
     font-size: 15px;
+  }
+
+  .url-container .url-actions {
+    margin-right: 20px;
+    margin-top: 5px;
   }
 }
