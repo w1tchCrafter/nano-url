@@ -309,4 +309,8 @@ button {
     margin-right: 20px;
     margin-top: 5px;
   }
+
+  .documentation .docs-title h1 {
+    font-size: 30px;
+  }
 }
